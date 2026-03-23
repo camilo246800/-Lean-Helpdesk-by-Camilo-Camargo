@@ -14,6 +14,7 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 
 📂 Estructura del Proyecto
 
+<code>
 /
 ├── api/
 │   ├── auth/           # Login, Logout, Perfil y Sesión
@@ -29,6 +30,7 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 ├── login.html          # Interfaz de acceso
 ├── perfil.html         # Interfaz de gestión de usuario
 └── vendor/             # Librerías de Composer
+</code>
 
 🗄️ Base de Datos (Esquema SQL)
 El sistema utiliza 4 tablas principales:
