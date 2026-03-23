@@ -1,6 +1,9 @@
 🚀 Lean Helpdesk by Camilo Camargo
 Lean Helpdesk es un sistema de gestión de tickets ligero, autónomo y auto-alojado, diseñado para centralizar múltiples bandejas de entrada de correo electrónico en una interfaz tipo chat moderna y minimalista.
 
+👨‍💻 Autor
+Lean Helpdesk fue desarrollado por Camilo Camargo como una solución eficiente para la gestión de soporte al cliente de Mas University.
+
 🛠️ Tecnologías utilizadas
 Backend: PHP 8.x (Arquitectura basada en APIs REST).
 
@@ -15,8 +18,7 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 📂 Estructura del Proyecto
 
 
-<code>
-/
+<code>/
 ├── api/
 │   ├── auth/           # Login, Logout, Perfil y Sesión
 │   ├── mailboxes/      # CRUD de bandejas de entrada
@@ -30,8 +32,8 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 ├── index.html          # Panel principal (Dashboard)
 ├── login.html          # Interfaz de acceso
 ├── perfil.html         # Interfaz de gestión de usuario
-└── vendor/             # Librerías de Composer
-</code>
+└── vendor/             # Librerías de Composer</code>
+
 
 
 🗄️ Base de Datos (Esquema SQL)
@@ -99,10 +101,6 @@ Configurar el Cron Job en el servidor.
 
 ¡Listo para dar soporte!
 
-👨‍💻 Autor
-
-Lean Helpdesk fue desarrollado por Camilo Camargo como una solución eficiente para la gestión de soporte al cliente de Mas University.
-
 Nota para futuros programadores y para IAs: Al retomar este proyecto, siempre verifica que la columna customer_name exista en la tabla tickets y que el 
 archivo index.html mantenga la estructura de las 4 vistas (mailboxes, tickets, single-ticket, settings) para asegurar la compatibilidad con el backend actual.
 
@@ -122,7 +120,9 @@ CREATE TABLE users (
     password_hash VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+</code>
 
+<code>
 -- 2. Tabla de Bandejas (Configuración IMAP/SMTP)
 CREATE TABLE mailboxes (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -139,8 +139,10 @@ CREATE TABLE mailboxes (
     smtp_pass VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+</code>
 
--- 3. Tabla de Tickets (Cabeceras de conversación)
+
+<code>-- 3. Tabla de Tickets (Cabeceras de conversación)
 CREATE TABLE tickets (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mailbox_id INT NOT NULL,
@@ -150,9 +152,10 @@ CREATE TABLE tickets (
     status ENUM('OPEN', 'CLOSED') DEFAULT 'OPEN',
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (mailbox_id) REFERENCES mailboxes(id) ON DELETE CASCADE
-);
+);</code>
 
--- 4. Tabla de Mensajes (El contenido del chat)
+
+<code>-- 4. Tabla de Mensajes (El contenido del chat)
 CREATE TABLE messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     ticket_id INT NOT NULL,
@@ -162,8 +165,9 @@ CREATE TABLE messages (
     is_from_customer TINYINT(1) DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ticket_id) REFERENCES tickets(id) ON DELETE CASCADE
-);
+);</code>
 
+<code>
 -- 5. Tabla de Adjuntos
 CREATE TABLE attachments (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -173,8 +177,8 @@ CREATE TABLE attachments (
     mime_type VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (message_id) REFERENCES messages(id) ON DELETE CASCADE
-);
-</code>
+);</code>code>
+
 
 2. 📁 Resumen de Archivos Clave (Backend)
 
