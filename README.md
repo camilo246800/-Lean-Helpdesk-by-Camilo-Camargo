@@ -14,6 +14,7 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 
 📂 Estructura del Proyecto
 
+
 <code>
 /
 ├── api/
@@ -32,7 +33,9 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 └── vendor/             # Librerías de Composer
 </code>
 
+
 🗄️ Base de Datos (Esquema SQL)
+
 El sistema utiliza 4 tablas principales:
 
 users: Almacena las credenciales de acceso al panel.
@@ -46,7 +49,9 @@ messages: El cuerpo de los correos (HTML/Texto) vinculados a un ticket.
 attachments: Registro de archivos descargados vinculados a mensajes.
 
 ⚙️ Configuración de Protocolos
+
 📩 IMAP (Lectura)
+
 El sistema utiliza el puerto 993 (SSL) por defecto.
 
 Host: localhost si el correo está en el mismo servidor (CyberPanel), o el host del proveedor (ej: imap.gmail.com).
@@ -54,6 +59,7 @@ Host: localhost si el correo está en el mismo servidor (CyberPanel), o el host 
 Funcionamiento: El script de Cron se conecta, descarga solo los correos UNSEEN (no leídos), crea el ticket, descarga adjuntos y marca el correo como "Leído" en el servidor original.
 
 📤 SMTP (Envío)
+
 Utiliza PHPMailer para responder desde la interfaz.
 
 Puertos compatibles: 465 (SSL) o 587 (TLS).
@@ -61,14 +67,16 @@ Puertos compatibles: 465 (SSL) o 587 (TLS).
 Validación: Requiere que el dominio esté verificado en proveedores como MailerSend o SendGrid para evitar rebotes.
 
 🤖 Automatización (Cron Job)
+
 Para que el sistema sea autónomo, se debe configurar una tarea programada en el servidor (CyberPanel -> Cron Jobs):
 
 Frecuencia recomendada: Cada 5 minutos (*/5 * * * *).
 
 Comando:
-php /home/tu-dominio.com/public_html/cron/fetch_emails.php
+<code>php /home/tu-dominio.com/public_html/cron/fetch_emails.php</code>
 
 🔍 Funciones Especiales
+
 Buscador Global: Filtra por correo de cliente o asunto en todas las bandejas simultáneamente.
 
 Gestión de Hilos: Agrupa mensajes automáticamente si el cliente responde al mismo hilo (basado en Email + Asunto).
@@ -78,6 +86,7 @@ Detector de Nombres: Captura el nombre real del remitente configurado en su clie
 Sistema de Adjuntos: Descarga automática de archivos del cliente y capacidad de adjuntar archivos en las respuestas del agente.
 
 🚀 Cómo empezar (Instalación rápida)
+
 Clonar el repositorio.
 
 Ejecutar composer install para instalar dependencias.
@@ -91,19 +100,21 @@ Configurar el Cron Job en el servidor.
 ¡Listo para dar soporte!
 
 👨‍💻 Autor
-Lean Helpdesk fue desarrollado por Camilo Camargo como una solución eficiente para la gestión de soporte al cliente de MasAcademy.
+
+Lean Helpdesk fue desarrollado por Camilo Camargo como una solución eficiente para la gestión de soporte al cliente de Mas University.
 
 Nota para futuros programadores y para IAs: Al retomar este proyecto, siempre verifica que la columna customer_name exista en la tabla tickets y que el 
 archivo index.html mantenga la estructura de las 4 vistas (mailboxes, tickets, single-ticket, settings) para asegurar la compatibilidad con el backend actual.
 
 📚 Documentación Técnica Maestra: Lean Helpdesk
 Autor: Camilo Camargo
-
 Versión: 1.0 (Final Estable)
 
 1. 🗄️ Estructura de Base de Datos (SQL)
+
 Copia y ejecuta este código en tu phpMyAdmin para crear la estructura completa y necesaria:
 
+<code>
 -- 1. Tabla de Usuarios (Acceso al Panel)
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -163,6 +174,7 @@ CREATE TABLE attachments (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (message_id) REFERENCES messages(id) ON DELETE CASCADE
 );
+</code>
 
 2. 📁 Resumen de Archivos Clave (Backend)
 
@@ -177,6 +189,7 @@ Lógica: Busca correos no leídos, extrae el nombre (personal), el email y los a
 Hilos: Agrupa por Email + Asunto para no duplicar tickets.
 
 api/tickets/reply.php (Envío SMTP)
+
 Función: Envía respuestas usando PHPMailer.
 
 Adjuntos: Permite subir archivos desde el panel, los guarda en /uploads y los envía al cliente.
