@@ -112,18 +112,18 @@ Versión: 1.0 (Final Estable)
 
 Copia y ejecuta este código en tu phpMyAdmin para crear la estructura completa y necesaria:
 
-<code>
--- 1. Tabla de Usuarios (Acceso al Panel)
+
+<code>-- 1. Tabla de Usuarios (Acceso al Panel)
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-</code>
+);</code>
 
-<code>
--- 2. Tabla de Bandejas (Configuración IMAP/SMTP)
+
+
+<code>-- 2. Tabla de Bandejas (Configuración IMAP/SMTP)
 CREATE TABLE mailboxes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -138,8 +138,8 @@ CREATE TABLE mailboxes (
     smtp_user VARCHAR(255) NOT NULL,
     smtp_pass VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-</code>
+);</code>
+
 
 
 <code>-- 3. Tabla de Tickets (Cabeceras de conversación)
@@ -177,7 +177,7 @@ CREATE TABLE attachments (
     mime_type VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (message_id) REFERENCES messages(id) ON DELETE CASCADE
-);</code>code>
+);</code>
 
 
 2. 📁 Resumen de Archivos Clave (Backend)
