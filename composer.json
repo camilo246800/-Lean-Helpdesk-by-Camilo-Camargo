@@ -1,0 +1,9 @@
+{
+    "name": "tu-empresa/lean-helpdesk",
+    "description": "Sistema de soporte ligero",
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "webklex/php-imap": "^5.3",
+        "ezyang/htmlpurifier": "^4.17"
+    }
+}
