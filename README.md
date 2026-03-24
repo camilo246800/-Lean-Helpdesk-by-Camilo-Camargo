@@ -5,15 +5,10 @@ Un sistema de gestión de tickets ligero, autónomo y auto-alojado, diseñado pa
 🛠️ Tecnologías utilizadas
 
 <code>Backend: PHP 8.x (Arquitectura basada en APIs REST).
-
 Frontend: HTML5, JavaScript (Vanilla), Tailwind CSS (CDN).
-
 Base de Datos: MySQL / MariaDB.
-
 Gestión de Correo: Webklex/PHP-IMAP (Lectura) y PHPMailer (Envío).
-
 Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.</code>
-
 
 📂 Estructura del Proyecto
 
