@@ -1,9 +1,10 @@
 Lean Helpdesk by Camilo Camargo
 
-Lean Helpdesk es un sistema de gestión de tickets ligero, autónomo y auto-alojado, diseñado para centralizar múltiples bandejas de entrada de correo electrónico en una interfaz tipo chat moderna y minimalista.
+Un sistema de gestión de tickets ligero, autónomo y auto-alojado, diseñado para centralizar múltiples bandejas de entrada de correo electrónico en una interfaz tipo chat moderna y minimalista.
 
 🛠️ Tecnologías utilizadas
-Backend: PHP 8.x (Arquitectura basada en APIs REST).
+
+<code>Backend: PHP 8.x (Arquitectura basada en APIs REST).
 
 Frontend: HTML5, JavaScript (Vanilla), Tailwind CSS (CDN).
 
@@ -11,10 +12,10 @@ Base de Datos: MySQL / MariaDB.
 
 Gestión de Correo: Webklex/PHP-IMAP (Lectura) y PHPMailer (Envío).
 
-Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
+Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.</code>
+
 
 📂 Estructura del Proyecto
-
 
 <code>/
 ├── api/
