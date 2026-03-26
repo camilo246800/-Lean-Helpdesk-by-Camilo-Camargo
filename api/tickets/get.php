@@ -2,6 +2,7 @@
 // api/tickets/get.php
 session_start();
 
+// 1. Verificación de seguridad
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     http_response_code(401);
     echo json_encode(['success' => false, 'message' => 'No autorizado']);
@@ -10,38 +11,46 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
 require_once '../../config/database.php';
 
-$ticket_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-if ($ticket_id === 0) {
-    echo json_encode(['success' => false, 'message' => 'ID de ticket inválido']);
+if ($id <= 0) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'message' => 'ID de ticket no válido']);
     exit;
 }
 
 try {
-    $stmt = $pdo->prepare("SELECT * FROM tickets WHERE id = ?");
-    $stmt->execute([$ticket_id]);
-    $ticket = $stmt->fetch();
+    // 2. Obtener la cabecera del ticket (Incluimos customer_name para el nuevo diseño)
+    $stmt = $pdo->prepare("SELECT id, customer_email, customer_name, subject, status FROM tickets WHERE id = ?");
+    $stmt->execute([$id]);
+    $ticket = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$ticket) {
         echo json_encode(['success' => false, 'message' => 'Ticket no encontrado']);
         exit;
     }
 
-    $stmtMsg = $pdo->prepare("SELECT * FROM messages WHERE ticket_id = ? ORDER BY created_at ASC");
-    $stmtMsg->execute([$ticket_id]);
-    $messages = $stmtMsg->fetchAll();
+    // 3. Obtener todos los mensajes vinculados a este ticket
+    $stmtMsgs = $pdo->prepare("SELECT id, body_html, body_text, is_from_customer, created_at FROM messages WHERE ticket_id = ? ORDER BY created_at ASC");
+    $stmtMsgs->execute([$id]);
+    $messages = $stmtMsgs->fetchAll(PDO::FETCH_ASSOC);
 
-    // ¡NUEVO!: Buscamos los adjuntos de cada mensaje
-    foreach ($messages as $key => $msg) {
-        $stmtAtt = $pdo->prepare("SELECT id, file_name, file_path, mime_type FROM attachments WHERE message_id = ?");
+    // 4. Bucle para inyectar los ADJUNTOS en cada mensaje (Lo que faltaba antes)
+    foreach ($messages as &$msg) {
+        $stmtAtt = $pdo->prepare("SELECT file_name, file_path, mime_type FROM attachments WHERE message_id = ?");
         $stmtAtt->execute([$msg['id']]);
-        $messages[$key]['attachments'] = $stmtAtt->fetchAll();
+        $msg['attachments'] = $stmtAtt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    echo json_encode(['success' => true, 'ticket' => $ticket, 'messages' => $messages]);
+    // 5. Respuesta en JSON con soporte para caracteres especiales (UTF-8)
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'success' => true,
+        'ticket' => $ticket,
+        'messages' => $messages
+    ], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Error: ' . $e->getMessage()]);
+    echo json_encode(['success' => false, 'message' => 'Error de base de datos: ' . $e->getMessage()]);
 }
-?>

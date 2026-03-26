@@ -21,15 +21,17 @@ if (empty($data->name) || empty($data->email) || empty($data->mail_host) || empt
 }
 
 try {
+    // Añadimos reply_to_email a la lista de columnas y un "?" extra
     $stmt = $pdo->prepare("
         INSERT INTO mailboxes 
-        (name, email, protocol, mail_host, mail_port, mail_user, mail_pass, smtp_host, smtp_port, smtp_user, smtp_pass) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        (name, email, reply_to_email, protocol, mail_host, mail_port, mail_user, mail_pass, smtp_host, smtp_port, smtp_user, smtp_pass) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->execute([
         $data->name,
         $data->email,
+        $data->reply_to_email ?? null, // Capturamos el nuevo campo (puede ser nulo)
         $data->protocol ?? 'IMAP',
         $data->mail_host,
         $data->mail_port,
@@ -44,8 +46,7 @@ try {
     echo json_encode(['success' => true, 'message' => 'Bandeja creada con éxito']);
 
 } catch (PDOException $e) {
-    // Si el correo ya existe (por el UNIQUE constraint), tirará error
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Error al guardar la bandeja. ¿Quizás este correo ya está registrado?']);
+    echo json_encode(['success' => false, 'message' => 'Error al guardar la bandeja: ' . $e->getMessage()]);
 }
 ?>

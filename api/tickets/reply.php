@@ -14,7 +14,6 @@ require_once '../../config/database.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Ahora recibimos los datos por POST tradicional (para soportar archivos)
 $ticket_id = isset($_POST['ticket_id']) ? intval($_POST['ticket_id']) : 0;
 $body = isset($_POST['body']) ? $_POST['body'] : '';
 
@@ -25,6 +24,7 @@ if (empty($ticket_id) || empty($body)) {
 }
 
 try {
+    // 1. Obtenemos la info del ticket y la bandeja (incluyendo el nuevo campo reply_to_email)
     $stmt = $pdo->prepare("SELECT t.customer_email, t.subject, m.* FROM tickets t JOIN mailboxes m ON t.mailbox_id = m.id WHERE t.id = ?");
     $stmt->execute([$ticket_id]);
     $info = $stmt->fetch();
@@ -35,24 +35,36 @@ try {
     }
 
     $mail = new PHPMailer(true);
-    $encryption = ($info['smtp_port'] == 465) ? PHPMailer::ENCRYPTION_SMTPS : PHPMailer::ENCRYPTION_STARTTLS;
-
+    
+    // Configuración SMTP (Usamos siempre los datos de MasUniversity que están en la tabla)
     $mail->isSMTP();
     $mail->Host       = $info['smtp_host'];
     $mail->SMTPAuth   = true;
     $mail->Username   = $info['smtp_user'];
     $mail->Password   = $info['smtp_pass'];
-    $mail->SMTPSecure = $encryption;
+    $mail->SMTPSecure = ($info['smtp_port'] == 465) ? PHPMailer::ENCRYPTION_SMTPS : PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = $info['smtp_port'];
-    $mail->CharSet    = 'UTF-8';
+    
+    $mail->CharSet = 'UTF-8';
+    $mail->Encoding = 'base64';
 
-    $mail->setFrom($info['email'], $info['name']);
+    // CONFIGURACIÓN DE REMITENTE (EL TRUCO)
+    // El "From" debe ser el usuario verificado en MailerSend para evitar el rebote.
+    // Pero el "Nombre" será el de la bandeja (ej: "ndefi")
+    $mail->setFrom($info['smtp_user'], $info['name']);
+
+    // El "Reply-To" es a donde llegará la respuesta del cliente.
+    // Si tienes configurado un reply_to_email, lo usamos; si no, el email de la bandeja.
+    $replyEmail = !empty($info['reply_to_email']) ? $info['reply_to_email'] : $info['email'];
+    $mail->addReplyTo($replyEmail, $info['name']);
+
     $mail->addAddress($info['customer_email']);
     
-    $subject = strpos(strtolower($info['subject']), 're:') === 0 ? $info['subject'] : 'Re: ' . $info['subject'];
+    $subject = (stripos($info['subject'], 're:') === 0) ? $info['subject'] : 'Re: ' . $info['subject'];
     $mail->Subject = $subject;
-    $mail->isHTML(false);
-    $mail->Body = $body;
+    
+    $mail->isHTML(true);
+    $mail->Body = nl2br(htmlspecialchars($body, ENT_QUOTES, 'UTF-8'));
 
     // --- PROCESAR ARCHIVOS ADJUNTOS ---
     $uploaded_files = [];
@@ -72,12 +84,8 @@ try {
                 $relative_path = '/uploads/' . $unique_name; 
                 $absolute_path = __DIR__ . '/../..' . $relative_path;
 
-                // Movemos el archivo a la carpeta uploads
                 if (move_uploaded_file($tmp_name, $absolute_path)) {
-                    // Lo adjuntamos al correo
                     $mail->addAttachment($absolute_path, $original_name);
-                    
-                    // Guardamos la info para la base de datos
                     $uploaded_files[] = [
                         'name' => $original_name,
                         'path' => $relative_path,
@@ -88,7 +96,6 @@ try {
         }
     }
 
-    // Enviar el correo
     $mail->send();
 
     // Guardar el mensaje en la BD
@@ -96,7 +103,6 @@ try {
     $stmtMsg->execute([$ticket_id, $body]);
     $message_id = $pdo->lastInsertId();
 
-    // Guardar los adjuntos en la BD asociados a tu mensaje
     foreach ($uploaded_files as $file) {
         $stmtAtt = $pdo->prepare("INSERT INTO attachments (message_id, file_name, file_path, mime_type) VALUES (?, ?, ?, ?)");
         $stmtAtt->execute([$message_id, $file['name'], $file['path'], $file['mime']]);
@@ -106,9 +112,8 @@ try {
 
 } catch (Exception $e) {
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Error al enviar correo: ' . $mail->ErrorInfo]);
+    echo json_encode(['success' => false, 'message' => 'Error al enviar: ' . $mail->ErrorInfo]);
 } catch (PDOException $e) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Error de base de datos']);
 }
-?>

@@ -174,6 +174,18 @@
                                 </div>
                             </div>
                         </div>
+                        
+<div class="grid grid-cols-2 gap-6 mb-4">
+    <div><label class="block text-sm font-medium text-gray-700 mb-1">Nombre Remitente (Alias)</label><input type="text" id="mb-name-reply" class="w-full border rounded px-3 py-2 text-sm focus:border-[#001128] focus:outline-none"></div>
+    <div><label class="block text-sm font-medium text-gray-700 mb-1">Correo (Alias)</label><input type="email" id="mb-email-reply" class="w-full border rounded px-3 py-2 text-sm focus:border-[#001128] focus:outline-none"></div>
+</div>
+
+<div class="mt-4">
+    <label class="block text-sm font-medium text-gray-700 mb-1">Responder a (Reply-To)</label>
+    <input type="email" id="mb-reply-to" placeholder="Opcional: ej. soporte@ndefi.io" class="w-full border rounded px-3 py-2 text-sm focus:border-[#001128] focus:outline-none bg-blue-50/20">
+    <p class="text-[10px] text-gray-400 mt-1 italic">Si usas el SMTP de MasUniversity pero la marca es Ndefi, pon aquí el correo de Ndefi.</p>
+</div>
+
                         <div id="form-msg" class="hidden p-3 rounded text-sm font-medium"></div>
                         <div class="flex justify-end pt-4 border-t mt-6">
                             <button type="submit" class="bg-[#001128] hover:bg-black text-white px-6 py-2 rounded font-bold transition">Guardar Configuración</button>
@@ -551,6 +563,10 @@
                     document.getElementById('settings-form').classList.remove('hidden');
                     document.getElementById('form-title').innerText = "Editar Bandeja";
                     document.getElementById('form-msg').classList.add('hidden');
+                    
+                    document.getElementById('mb-name-reply').value = mb.name; // <--- Llenar el de abajo
+                    document.getElementById('mb-email-reply').value = mb.email; // <--- Llenar el de abajo
+                    document.getElementById('mb-reply-to').value = mb.reply_to_email || '';
                 }
             } catch (error) { alert("Error al obtener datos"); }
         }
@@ -563,6 +579,7 @@
             const mbId = parseInt(document.getElementById('mb-id').value);
             const payload = {
                 id: mbId,
+                reply_to_email: document.getElementById('mb-reply-to').value,
                 name: document.getElementById('mb-name').value, email: document.getElementById('mb-email').value, protocol: document.getElementById('mb-protocol').value,
                 mail_host: document.getElementById('mb-imap-host').value, mail_port: document.getElementById('mb-imap-port').value, mail_user: document.getElementById('mb-imap-user').value, mail_pass: document.getElementById('mb-imap-pass').value,
                 smtp_host: document.getElementById('mb-smtp-host').value, smtp_port: document.getElementById('mb-smtp-port').value, smtp_user: document.getElementById('mb-smtp-user').value, smtp_pass: document.getElementById('mb-smtp-pass').value

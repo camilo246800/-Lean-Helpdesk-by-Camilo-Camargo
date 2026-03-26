@@ -1,0 +1,918 @@
+ResentFrom: lamic@prodigy.net.mx
+Return-Path: <bounce_915946553+a.116648445601ade4c_v54@mail3.zgpl.zcsend.net> SIZE=51750
+Received: from 54.203.183.126 unverified ([54.203.183.126]) by mwde07oc.mail2world.com with Mail2World SMTP Server; 
+	Mon, 23 Mar 2026 09:45:21 -0700
+Received: from sendera66.zcsend.net ([135.84.81.66])
+	by cmsmtp with ESMTPS
+	id 4iOuw7MvMywip4iP2wzCaf; Mon, 23 Mar 2026 16:45:21 +0000
+X-SMC-CC: prm
+X-OpenTrafficX: bulk
+X-Authority-Analysis: v=2.4 cv=TNe/S0la c=1 sm=1 tr=0 ts=69c16e21 b=1
+ cx=a_idp_d a=CUGriUdyNSijq4L7D7oPhQ==:117 a=CUGriUdyNSijq4L7D7oPhQ==:17
+ a=fGYPQxYm8b8A:10 a=Yq5XynenixoA:10 a=5KLPUuaC_9wA:10 a=6fo2m7gLXeQA:10
+ a=sZDfYgqlBZAA:10 a=jJrOw3FHAAAA:8 a=BkpHzsgbAAAA:8 a=ayFJn3lRAAAA:8
+ a=X5S-tnkz_XAPUmNO12IA:9 a=QEXdDO2ut3YA:10 a=q-jFeXIcAAAA:8 a=SSmOFEACAAAA:8
+ a=MadwEGEFTlBGaQQc50oA:9 a=JD3G1oUzllePf0Ar:21 a=gKO2Hq4RSVkA:10
+ a=mb2oRDNbzfIA:10 a=Ru97nHiPDtp4odn3vKgu:22 a=aYRC3DnfHwl2prUSrm8A:22
+ a=b0igxion-cZQY2oObanL:22 a=IYhFeL4bBXNKZhg-rCbM:22 a=jlhDbGnjSk1UgEmaO1rr:22
+ a=4CHUIl1T2vnACTzzVizg:22 a=P8gMff4ppgpy92pg1mm4:22 a=Cig2ze-RM6DHIf1bWwBm:22
+ a=TumZdMTH67x8YaOOPDP7:22 a=poXaRoVlC6wW9_mwW8W4:22 a=4MmT0gk-9-J2g2A9bAwk:22
+ a=pHzHmUro8NiASowvMSCR:22 a=xoEH_sTeL_Rfw54TyV31:22 cc=prm
+Received: from senderb63.zcsend.net by sendera66.zcsend.net
+	with SMTP id 177428431944937151; Mon, 23 Mar 2026 09:45:19 -0700
+Received: from 10.80.153.29 by senderb63.zcsend.net
+	with SMTP id 177428431877792878; Mon, 23 Mar 2026 09:45:18 -0700
+DKIM-Signature: a=rsa-sha256; q=dns/txt; b=xZbp7m/Cne2h0SDRxSwjVzndpPiIlIO6Yvh4GzCdgcKU+IT0Tdqw6aRXEdgOKd9WEA0Fudt5JAS1Lx8p/R3r1wkvZKPF0jPAStaeMCJw3M6L6wwtsfZk80+f3rVwZ6yzNvQ3johd/WNgG62oT8qgYWh+58FGMShYpVVqrBPulo4=; c=simple/simple; s=261353; d=masuniversity.io; v=1; bh=4LhgoTBVj8e+0L8fXc6vpWY8g2hDq2zvNVPd+erobYU=; h=date:date:from:from:to:to:message-id:subject:subject:mime-version:content-type:list-unsubscribe:list-unsubscribe:list-unsubscribe-post:x-csa-complaints;
+DKIM-Signature: a=rsa-sha256; q=dns/txt; b=p0XT1DKsRK7L4+NBI3PcTVHFgPayKpHQ4S7/+ZePfvMtUSHE8fZ+9qA5MDAfwbzV4r/jvRkc2aHJVcySPxSxL/lU8Wfy4jqmiFYpjVaRsbtJBkmp5MXC7L+FSQ813q4EA+4VXMGiJJcYweKM4F9puKGzrVsFbSayv3eH/EAxnNM=; c=simple/simple; s=k1; d=mailb3.zgpl.zcsend.net; v=1; bh=4LhgoTBVj8e+0L8fXc6vpWY8g2hDq2zvNVPd+erobYU=; h=date:date:from:from:to:to:message-id:subject:subject:mime-version:content-type:list-unsubscribe:list-unsubscribe:list-unsubscribe-post:x-csa-complaints;
+Date: Mon, 23 Mar 2026 09:45:18 -0700 (PDT)
+From: "Cris Urzua" <soporte@masuniversity.io>
+To: lamic@prodigy.net.mx
+Message-ID: <zcb.3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c.116648445601ade4c.1774284318773@mail3.zgpl.zcsend.net>
+Subject: =?UTF-8?B?TGEgQmlibGlhIG5vIHRpZW5lIHBybw==?=
+ =?UTF-8?B?YmxlbWEgY29uIGxhcyB2ZW50YXPwn5GA?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_967865_2111518800.1774284318772"
+List-Unsubscribe: <https://uwxv-zgpl.maillist-manage.com/ua/optout?od=3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c&rd=116648445601ade4c&sd=1166484456019f95f&n=11699e4c2ddd145>,<mailto:leave_915946553+116648445601ade4c_1166484456019f95f@zcsend.net>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CSA-Complaints: csa-complaints@eco.de
+Reply-To: soporte@masuniversity.io
+X-JID: 3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c.1166484456019f562
+X-campaignid: zohocampaigns.3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c.zcb.116648445601ade4c.11699e4c2ddd145
+X-Zoho-RID: zohocampaigns.3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c.zcb.116648445601ade4c.11699e4c2ddd145
+X-Mailer: Zoho Campaigns
+X-Report-Abuse: <Please send a copy of this message along with header to abuse+3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c_zcb_116648445601ade4c@zohocampaigns.com>, <https://uwxv-zgpl.maillist-manage.com/campaigns/ReportAbuse.zc?od=3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c&rd=116648445601ade4c&sd=1166484456019f95f&n=11699e4c2ddd145>
+X-CMAE-Envelope: MS4xfP8giR+PxJiNfq5GeUKQNmONqhZZk2mVcoRO+FZfAaZDvC2RK4h5BnrCiorU5ezttm0cuSSIyiBdLlEBxLhntY/VgBYciBKAlbU7nNhU8KPDfJbw4XDg
+ E12+O8ZcgyAGtaI13kaXzxwNVkNmtnUmKhg5umv8rLQktfty3yZ1fS+sWF6mFlbYadN4K1R/hokzymZeAp8l+IxSN0TKTMvB9gIQlB8lo+NDjUq2IguyOa7Z
+ gMrDOTcVH59npHY1X5NSZA==
+
+------=_Part_967865_2111518800.1774284318772
+Content-Type: text/plain;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Ya est=C3=A1 disponible el Episodio 209 de Venta Perfecta Podcast =F0=9F=8E=
+=99=EF=B8=8F
+
+Hay una idea que suena espiritual=E2=80=A6
+pero est=C3=A1 limitando a muchos:
+
+=E2=80=9CSi es de Dios, no necesita venderse.=E2=80=9D
+
+Suena correcta.
+Suena humilde.
+
+Pero ignora algo clave:
+
+Todo mensaje que no se comunica bien=E2=80=A6 no se multiplica.
+
+Muchos creyentes no rechazan las ventas por =C3=A9tica.
+Las rechazan por confusi=C3=B3n.
+
+Confunden persuasi=C3=B3n con manipulaci=C3=B3n.
+Influencia con presi=C3=B3n.
+Y terminan apagando el alcance de lo que dicen valorar.
+
+En este episodio pongo sobre la mesa una distinci=C3=B3n importante:
+
+Vender no es manipular.
+Vender es comunicar con claridad y responsabilidad.
+
+Porque incluso en la Biblia:
+
+Jes=C3=BAs no solo ense=C3=B1aba=E2=80=A6
+conectaba, provocaba y comunicaba con intenci=C3=B3n.
+
+Y eso no es casualidad.
+
+Es estrategia.
+=F0=9F=8E=A7 Esc=C3=BAchalo aqu=C3=AD:
+https://youtu.be/RLq1GexgFmg https://youtu.be/RLq1GexgFmg [ https://youtu.b=
+e/RLq1GexgFmg ]
+
+https://www.instagram.com/crisurzua/?hl=3Des
+
+### Cris Urzua
+
+=F0=9F=92=B2Te ayudo a pasar de so=C3=B1ador o emprendedor a Empresario Int=
+eligente=E2=84=A2 lo m=C3=A1s r=C3=A1pido posible
+
+=F0=9F=8C=8F Fundador de 5 empresas.
+
+=F0=9F=91=89$300M+ en ventas extras reportadas por clientes.
+
+=F0=9F=94=A5Portada de la revista ENTREPRENEUR en 2019.
+
+=E2=9A=A0=EF=B8=8FR=C3=81PIDO: S=C3=ADgueme en Instagram y env=C3=ADame la =
+palabra "EMPRENDE" para recibir un regalo gratis.
+
+PD:
+Rechazar las ventas no te hace m=C3=A1s espiritual.
+Te hace menos influyente =E2=9A=A0=EF=B8=8F
+
+Recibes este correo porque te has registrado a alguna de nuestras clases, e=
+ntrenamientos o eventos de mas university . Si crees que esto es un error, =
+puedes gestionar tus preferencias abajo.
+ https://uwxv-zgpl.maillist-manage.com/ua/optout?od=3D3z358edffb0a711ff7279=
+27de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c&rd=3D116648445601ade4c&sd=3D1=
+166484456019f95f&n=3D11699e4c2ddd145 Unsubscribe or https://uwxv-zgpl.maill=
+ist-manage.com/ua/commpref?od=3D3z358edffb0a711ff727927de207a6ea8c311f7dafb=
+f86ce66fa71f87f5e56c86c&rd=3D116648445601ade4c&sd=3D1166484456019f95f&n=3D1=
+1699e4c2ddd145 Update your preferences
+
+
+
+
+------=_Part_967865_2111518800.1774284318772
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"><head><titl=
+e>La Biblia no tiene problema con las ventas=F0=9F=91=80</title><!--[if gte=
+ mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:=
+PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+=09<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+=09<style>
+=09/* #### Mobile Phones Portrait #### */
+=09/* #### iPhone 4+ Portrait or Landscape #### */
+=09@media only screen and (max-width: 480px){
+=09=09table[class=3DcontentInner] {width:100% !important;padding:0px;margin=
+:0px;}
+=09=09img[class=3DzpImage]{width:100% !important;max-width: 360px !importan=
+t;text-align:center;margin:0px;padding:0px}=20
+=09=09body, table, td, p, li,div,span, blockquote{-webkit-text-size-adjust:=
+none !important;margin:0px auto;line-height:1.7}
+=09=09table[class=3DzpImageCaption]{text-align:left;}
+=09=09table[class=3Dcols]{width:100% !important;max-width:100% !important;t=
+ext-align:left;}
+=09=09table[class=3Dzpcolumns] {text-align:left;margin:0px;}=20
+=09=09table[class=3Dzpcolumn] {text-align:left;margin:0px;}=20
+=09=09table[class=3DzpAlignPos]{width:100%;text-align:left;margin:0px;}=20
+=09=09td[class=3Dtxtsize]{font-size:18px !important;}
+=09=09td[class=3Dpaddingcomp]{ padding-left: 15px !important; padding-right=
+: 15px !important }
+=09=09td[class=3Dbannerimgpad]{padding:0px !important;}
+=09=09span[class=3Dtxtsize]{font-size:18px !important;}
+=09=09img[size =3D "B"]{width: 100% !important;max-width:100% !important;ma=
+rgin: 0px !important;padding:0px !important;}
+=09=09img[size =3D "F"]{width: 100% !important;max-width:100% !important;ma=
+rgin: 0px !important;padding:0px !important;}
+=09=09img[size =3D "S"]{width:105px !important; height:auto; margin:0px aut=
+o !important;padding:0px !important;}
+=09=09img[size =3D "M"]{width:277.869px !important;height:auto;margin:0px a=
+uto !important;padding:0px !important;}
+=09=09.cmp-mobile-view-hide { display: none !important }=20
+=09=09.cmp-desk-view-hide { display: block !important }=20
+=09=09h1{
+=09=09=09font-size:28px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h2{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h3{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h4{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09}=09=09
+=09=09@media only screen and (max-width: 480px){
+=09=09.zpImage{
+=09=09=09height:auto !important;
+=09=09=09width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.contentInner,.cols,.zpAlignPos{
+=09=09=09width:100% !important;
+=09=09=09max-width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.paddingcomp{
+=09=09=09padding-left: 15px !important;
+=09=09=09padding-right: 15px !important;=20
+=09=09}
+=09=09.bannerimgpad{
+=09=09=09padding:0px !important;
+=09=09}
+=09=09.buttonElem a
+=09=09{
+=09=09=09max-width: 320px !important;
+=09=09}
+=09}
+=09=09@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400=
+px !important;margin:0px auto;text-align:center;}
+        }
+=09=09a[x-apple-data-detectors] {
+=09=09    color: inherit !important;
+=09=09    text-decoration: none !important;
+=09=09    font-size: inherit !important;
+=09=09    font-family: inherit !important;
+=09=09    font-weight: inherit !important;
+=09=09    line-height: inherit !important;
+=09=09}
+=09=09
+=09=09</style>
+<meta content=3D"text/html;charset=3DUTF-8" http-equiv=3D"Content-Type"></h=
+ead><body bgcolor=3D"#ffffff" style=3D"margin:0; padding:0;font-family:Aria=
+l, Helvetica, sans-serif; font-size:12px; color:#000000;"><!--[if !mso 9]><=
+!--><span style=3D'font-size:0px;max-width: 0px;max-height: 0px;mso-hide:al=
+l;display:block;'> El problema es c=C3=B3mo las estamos entendiendo  </span=
+><!--<![endif]--><center>=20
+<div class=3D"zppage-container">                                           =
+              =20
+=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"contentOuter" id=3D"contentOuter" style=3D"background-color=
+:#f0f0f0;background-color:#ffffff; mso-table-lspace:0pt; mso-table-rspace:0=
+pt;font-size:12px;text-align:center;border:0px;padding:0px;border-collapse:=
+collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width=3D"100%">=20
+=09=09=09<tbody><tr>=20
+=09=09=09=09<td style=3D" mso-table-lspace:0pt; font-size:12px;font-family:=
+Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0p=
+x;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rsp=
+ace:0pt;">&nbsp;</td>
+=09=09=09=09<td align=3D"center" style=3D" mso-table-lspace:0pt; font-size:=
+12px;font-family:Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-si=
+ze:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt;">
+=09=09=09=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"contentInner" id=3D"contentInner" style=3D"border-=
+collapse:collapse; border:0px;font-size:12px;border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt;background-color:#ffffff;background-=
+color:#ffffff;width:600px;margin:0px auto;border:0px;" width=3D"600">=20
+=09=09=09=09=09<tbody><tr>=20
+=09=09=09=09=09<td height=3D"570" style=3D"border-collapse:collapse; mso-ta=
+ble-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; ms=
+o-table-rspace:0pt;font-size:12px;border:0px;padding:0px;" valign=3D"top">
+=09=09=09=09=09 =09<a name=3D"Top" style=3D"text-decoration:underline;"></a=
+>
+    <div baseposition=3D"pos_YrobDQg7SAqnBt5RUo4dhQ" class=3D"zpcontent-wra=
+pper" id=3D"page-container">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"page-cont=
+ainer" style=3D" mso-table-lspace:0pt;font-size:12px;border:0px;padding:0px=
+;border-collapse:collapse; mso-table-lspace:0pt;mso-table-rspace:0pt;text-d=
+ecoration:none !important;" width=3D"100%">
+<tbody><tr><td class=3D"txtsize" id=3D"elm_1773673725008" style=3D" mso-tab=
+le-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso=
+-table-rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-collapse=
+:collapse;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1773673725008" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div style><span><font style>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana; color:#000000;paddin=
+g:0px;margin: 0;font-size: 13pt; line-height: 19pt; text-align: left;"><fon=
+t color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);=
+"><br></font></p><p style=3D"font-family:Arial,verdana;font-size:12px; colo=
+r:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font=
+ color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); =
+font-size: 13pt;">Ya est&aacute; disponible el <b style>Episodio 209 de Ven=
+ta Perfecta Podcast</b> =F0=9F=8E=99=EF=B8=8F</font></p><p style=3D"font-fa=
+mily:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line=
+-height: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, He=
+lvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><p =
+style=3D"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0p=
+x;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#000000" f=
+ace=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;">Ha=
+y una idea que suena espiritual&hellip;<br>pero est&aacute; limitando a muc=
+hos:</font></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:=
+#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font c=
+olor=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); fo=
+nt-size: 13pt;"><br></font></p><p style=3D"font-family:Arial,verdana;font-s=
+ize:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align=
+: left;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: =
+rgb(0, 0, 0); font-size: 13pt;">&ldquo;Si es de Dios, no necesita venderse.=
+&rdquo;</font></p><p style=3D"font-family:Arial,verdana;font-size:12px; col=
+or:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><fon=
+t color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);=
+ font-size: 13pt;"><br></font></p><p style=3D"font-family:Arial,verdana;fon=
+t-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-al=
+ign: left;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"colo=
+r: rgb(0, 0, 0); font-size: 13pt;">Suena correcta.<br>Suena humilde.</font>=
+</p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000000;pad=
+ding:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#00=
+0000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13=
+pt;"><br></font></p><p style=3D"font-family:Arial,verdana;font-size:12px; c=
+olor:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><f=
+ont color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0=
+); font-size: 13pt;">Pero ignora algo clave:</font></p><p style=3D"font-fam=
+ily:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-=
+height: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, Hel=
+vetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><p s=
+tyle=3D"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px=
+;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#000000" fa=
+ce=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><b>=
+Todo mensaje que no se comunica bien&hellip; no se multiplica.</b></font></=
+p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000000;paddi=
+ng:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#0000=
+00" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt=
+;"><br></font></p><p style=3D"font-family:Arial,verdana;font-size:12px; col=
+or:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><fon=
+t color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);=
+ font-size: 13pt;">Muchos creyentes no rechazan las ventas por &eacute;tica=
+.<br>Las rechazan por confusi&oacute;n.</font></p><p style=3D"font-family:A=
+rial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-heigh=
+t: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, Helvetic=
+a" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><p style=
+=3D"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;mar=
+gin: 0;line-height: 19pt; text-align: left;"><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;">Confu=
+nden persuasi&oacute;n con manipulaci&oacute;n.<br>Influencia con presi&oac=
+ute;n.<br>Y terminan apagando el alcance de lo que dicen valorar.</font></p=
+><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000000;paddin=
+g:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#00000=
+0" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;=
+"><br></font></p><p style=3D"font-family:Arial,verdana;font-size:12px; colo=
+r:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font=
+ color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); =
+font-size: 13pt;">En este episodio pongo sobre la mesa una distinci&oacute;=
+n importante:</font></p><p style=3D"font-family:Arial,verdana;font-size:12p=
+x; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;=
+"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, =
+0, 0); font-size: 13pt;"><br></font></p><p style=3D"font-family:Arial,verda=
+na;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; t=
+ext-align: left;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=
+=3D"color: rgb(0, 0, 0); font-size: 13pt;"><b>Vender no es manipular.<br>Ve=
+nder es comunicar con claridad y responsabilidad.</b></font></p><p style=3D=
+"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin=
+: 0;line-height: 19pt; text-align: left;"><font color=3D"#000000" face=3D"A=
+rial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font=
+></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000000;pa=
+dding:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=3D"#0=
+00000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 1=
+3pt;">Porque incluso en la Biblia:</font></p><p style=3D"font-family:Arial,=
+verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19=
+pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, Helvetica" st=
+yle=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><p style=3D"fo=
+nt-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0=
+;line-height: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Aria=
+l, Helvetica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;">Jes&uacute;s =
+no solo ense&ntilde;aba&hellip;<br><b>conectaba, provocaba y comunicaba con=
+ intenci&oacute;n.</b></font></p><p style=3D"font-family:Arial,verdana;font=
+-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-ali=
+gn: left;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color=
+: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><p style=3D"font-family:Ar=
+ial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height=
+: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, Helvetica=
+" style=3D"color: rgb(0, 0, 0); font-size: 13pt;">Y eso no es casualidad.</=
+font></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#00000=
+0;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=
+=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-s=
+ize: 13pt;"><br></font></p><p style=3D"font-family:Arial,verdana;font-size:=
+12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: le=
+ft;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(=
+0, 0, 0); font-size: 13pt;">Es estrategia.</font></p><p style=3D"font-famil=
+y:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-he=
+ight: 19pt; text-align: left;"><font color=3D"#000000" face=3D"Arial, Helve=
+tica" style=3D"color: rgb(0, 0, 0); font-size: 13pt;"><br></font></p><font =
+style=3D"font-size: 13pt;">=F0=9F=8E=A7 <b style>Esc&uacute;chalo aqu&iacut=
+e;:</b><br><a href=3D"https://uwxv-zgpl.maillist-manage.com/click/116648445=
+601ade4c/1166484456019f59c" rel=3D"noopener noreferrer" style=3D"text-decor=
+ation:underline;color: rgb(51, 51, 51);" target=3D"_blank" zcurl_name=3D"l_=
+1">https://youtu.be/RLq1GexgFmg</a></font></font>
+
+</span></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1772467741026" style=3D" mso-table-lspa=
+ce:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-=
+rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-collapse:collap=
+se;" valign=3D"top">
+
+=09<div class=3D"zpelement-wrapper zpcol-layout" id=3D"elm_1772467741026" m=
+bimgalign=3D"no" style=3D"word-wrap:break-word;padding-bottom:0 !important;=
+overflow:hidden;padding:0px;margin:0px;">
+=09<div class=3D"zpcolumns" elm_wid_start=3D"600" style=3D"padding:0px;marg=
+in:0px;">
+=09    =09 <table bgcolor=3D"transparent" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;bord=
+er:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-tabl=
+e-rspace:0pt;width:100%;background-color:transparent;" width=3D"100%">
+=09    <tbody><tr>
+=09=09<td class=3D"txtsize" style=3D"border-collapse:collapse; mso-table-ls=
+pace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-tabl=
+e-rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-top:none none=
+ none;border-bottom:none none none;" valign=3D"top">
+            =09<!--[if (gte mso 9)|(IE)]>
+            =09=09=09<table cellpadding=3D"0" cellspacing=3D"0" style=3D" m=
+so-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;border:0px;padding=
+:0px;border-collapse:collapse; mso-table-lspace:0pt;width:100%; mso-table-r=
+space:0pt;" width=3D"100%">
+=09=09=09=09    =09<tbody><tr>
+=09            <![endif]-->
+=09=09=09
+=09=09        <!--[if (gte mso 9)|(IE)]>
+=09=09=09=09=09=09<td style=3D"font-size:12px;font-family:Arial, Helvetica,=
+ sans-serif;border:0px;padding:0px 0px;" align=3D"left" width=3D" 38.0%" va=
+lign=3D"top">
+=09            <![endif]-->        =20
+=09=09=09=09  <table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"cols" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;max-width:228.0px;width:100%;border:0px;padding:0px;border-collapse:co=
+llapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;fl=
+oat:left;" width=3D"100%">
+=09=09=09=09<tbody><tr>
+=09=09                <td class=3D"txtsize" style=3D"border-collapse:collap=
+se; mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans=
+-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;" valign=
+=3D"top">
+                                    <div class=3D"zpwrapper col-space" id=
+=3D"pos_1772467741027" style=3D"padding:0px;">
+
+=09    =09<table bgcolor=3D"transparent" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-si=
+ze:12px;border:0px;padding:0px;width:100%;border-collapse:collapse; mso-tab=
+le-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:=
+transparent;">
+=09    <tbody><tr>
+=09=09<td class=3D"txtsize" style=3D"border-collapse:collapse; mso-table-ls=
+pace:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-tabl=
+e-rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-top:none none=
+ none ;border-bottom:none none none;">
+            =09<div class=3D"zpelement-wrapper image" coupcmp id=3D"elm_177=
+2467741029" prodcmp style=3D";word-wrap:break-word;overflow:hidden;padding:=
+0px;background-color:transparent;">
+=09=09=09<div>
+=09=09        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-=
+rspace:0pt;font-size:12px;text-align:left;width:100%;padding:0px;border:0px=
+;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-=
+break:break-word;width:100%;text-align:center;">
+            =09=09<tbody><tr><td class=3D"paddingcomp" style=3D"border-coll=
+apse:collapse; mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helv=
+etica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:7=
+px 15px;text-align:center;padding-top:20px;padding-bottom:0px;padding-right=
+:0px;padding-left:0px;">
+=09=09=09<a href=3D"https://uwxv-zgpl.maillist-manage.com/click/11664844560=
+1ade4c/1166484456019f59e" style=3D"text-decoration:underline;border:0px;" t=
+arget=3D"_blank" zcurl_name=3D"l_2">
+=09=09=09<img align=3D"center" alt=3D"https://stratus.campaign-image.com/im=
+ages/1613560000001210118_zc_v1_1772222596755_mznfn0jb8n6o8ahk0f5reodk3g8mro=
+kckbfaqtwz_(1).png" class=3D"zpImage" height=3D"auto" hspace=3D"0" size=3D"=
+F" src=3D"https://stratus.campaign-image.com/images/1613560000005404004_1_1=
+772467831766_(1).png" style=3D"width:228px;height:autopx;max-width:360px !i=
+mportant;border:0px;text-align:center;" vspace=3D"0" width=3D"228">
+=09=09=09</a>
+=09=09=09</td></tr>
+=09=09=09</tbody></table>
+=09=09</div>
+            </div>
+            </td></tr></tbody></table>
+=09=09                    </div>=20
+=09=09    </td></tr></tbody></table>
+=09=09    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+=09=09=09
+=09=09        <!--[if (gte mso 9)|(IE)]>
+=09=09=09=09=09=09<td style=3D"font-size:12px;font-family:Arial, Helvetica,=
+ sans-serif;border:0px;padding:0px 0px;" align=3D"left" width=3D" 62.0%" va=
+lign=3D"top">
+=09            <![endif]-->        =20
+=09=09=09=09  <table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"cols" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;max-width:372.0px;width:100%;border:0px;padding:0px;border-collapse:co=
+llapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;fl=
+oat:left;" width=3D"100%">
+=09=09=09=09<tbody><tr>
+=09=09                <td class=3D"txtsize" style=3D"border-collapse:collap=
+se; mso-table-lspace:0pt; font-size:12px;font-family:Arial, Helvetica, sans=
+-serif; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;" valign=
+=3D"top">
+                                    <div class=3D"zpwrapper col-space" id=
+=3D"pos_1772467741028" style=3D"padding:0px;">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741030" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div style><p style=3D"font-family:Arial,verdana;=
+font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text=
+-align: left; word-break: normal; overflow-wrap: normal;"><font color=3D"#0=
+00000" face=3D"Arial, Helvetica" style=3D"color:#000000;font-size: 12pt;"><=
+span>
+
+</span></font></p><h3 style=3D"margin: 0;padding: 0px;font-family:Arial, He=
+lvetica, sans-serif; color:#000000;color:#000000; font-weight:normal;font-f=
+amily:Arial,verdana,Helvetica, sans-serif; color:#000000;font-size: 24px;">=
+<font color=3D"#000000" face=3D"Montserrat, helvetica, arial, sans-serif" s=
+tyle=3D"color: rgb(0, 0, 0); font-size: 24pt;"><b style><i style>Cris Urzua=
+</i></b></font></h3><font color=3D"#000000" face=3D"Arial, Helvetica" style=
+=3D"color:#000000;font-size: 12pt;">
+
+</font><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px=
+; color:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: no=
+rmal;"></p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741031" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:2px;padding-bottom:0px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div componentpaddingbottom=3D"0px" componentpadd=
+ingleft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"2px"=
+ data-gramm=3D"false" spellcheck=3D"false" style><p style=3D"line-height:1.=
+7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margi=
+n: 0;word-break: normal; overflow-wrap: normal;"><span>
+
+</span></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000=
+000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: =
+normal; overflow-wrap: normal;"><font color=3D"#000000" face=3D"Arial, Helv=
+etica" style=3D"color: rgb(0, 0, 0); font-size: 11pt;">=F0=9F=92=B2Te ayudo=
+ a pasar de so&ntilde;ador o emprendedor a Empresario Inteligente&trade; lo=
+ m&aacute;s r&aacute;pido posible</font></p>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px; color=
+:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: normal;">=
+</p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741032" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:0px;padding-bottom:0px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div componentpaddingbottom=3D"0px" componentpadd=
+ingleft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"0px"=
+ data-gramm=3D"false" spellcheck=3D"false" style><p style=3D"line-height:1.=
+7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margi=
+n: 0;word-break: normal; overflow-wrap: normal;"><span>
+
+</span></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000=
+000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: =
+normal; overflow-wrap: normal;"><font color=3D"#000000" face=3D"Arial, Helv=
+etica" style=3D"color: rgb(0, 0, 0);"><font style=3D"font-size: 11pt;">=F0=
+=9F=8C=8F Fundador de 5 empresas.</font></font></p>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px; color=
+:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: normal;">=
+</p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741033" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:0px;padding-bottom:0px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div componentpaddingbottom=3D"0px" componentpadd=
+ingleft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"0px"=
+ data-gramm=3D"false" spellcheck=3D"false" style><p style=3D"line-height:1.=
+7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margi=
+n: 0;word-break: normal; overflow-wrap: normal;"><span>
+
+</span></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000=
+000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: =
+normal; overflow-wrap: normal;"><font color=3D"#000000" face=3D"Arial, Helv=
+etica" style=3D"font-size: 12pt;color:#000000;"><font><span>
+
+</span></font></font></p><p style=3D"font-family:Arial,verdana;font-size:12=
+px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left=
+; word-break: normal; overflow-wrap: normal;"><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);"><font style><font colo=
+r=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0); font-=
+size: 11pt;">=F0=9F=91=89&nbsp;$300M+ en ventas extras reportadas por clien=
+tes.</font></font></font></p><font color=3D"#000000" face=3D"Arial, Helveti=
+ca" style=3D"font-size: 12pt;color:#000000;"><font>
+
+</font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;font-si=
+ze:12px; color:#000000;padding:0px;margin: 0;word-break: normal; overflow-w=
+rap: normal;"></p>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px; color=
+:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: normal;">=
+</p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741034" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:0px;padding-bottom:0px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div componentpaddingbottom=3D"0px" componentpadd=
+ingleft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"0px"=
+ data-gramm=3D"false" spellcheck=3D"false" style><p style=3D"line-height:1.=
+7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margi=
+n: 0;word-break: normal; overflow-wrap: normal;"><span>
+
+</span></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000=
+000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: =
+normal; overflow-wrap: normal;"><font color=3D"#000000" face=3D"Arial, Helv=
+etica" style=3D"font-size: 12pt;color:#000000;"><font><span>
+
+</span></font></font></p><p style=3D"font-family:Arial,verdana;font-size:12=
+px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left=
+; word-break: normal; overflow-wrap: normal;"><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#000000;"><font><font =
+color=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:=
+#000000;"><span>
+
+</span></font></font></font></p><p style=3D"font-family:Arial,verdana;font-=
+size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-alig=
+n: left; word-break: normal; overflow-wrap: normal;"><font color=3D"#000000=
+" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);"><font style><fon=
+t color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);=
+"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, =
+0, 0); font-size: 11pt;">=F0=9F=94=A5&nbsp;Portada de la revista ENTREPRENE=
+UR en 2019.</font></font></font></font></p><font color=3D"#000000" face=3D"=
+Arial, Helvetica" style=3D"font-size: 12pt;color:#000000;"><font><font colo=
+r=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#000=
+000;">
+
+</font></font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;=
+font-size:12px; color:#000000;padding:0px;margin: 0;word-break: normal; ove=
+rflow-wrap: normal;"></p><font color=3D"#000000" face=3D"Arial, Helvetica" =
+style=3D"font-size: 12pt;color:#000000;"><font>
+
+</font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;font-si=
+ze:12px; color:#000000;padding:0px;margin: 0;word-break: normal; overflow-w=
+rap: normal;"></p>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px; color=
+:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: normal;">=
+</p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467741035" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:0px;padding-bottom:0px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div componentpaddingbottom=3D"0px" componentpadd=
+ingleft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"0px"=
+ data-gramm=3D"false" spellcheck=3D"false" style><p style=3D"line-height:1.=
+7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margi=
+n: 0;word-break: normal; overflow-wrap: normal;"><span>
+
+</span></p><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000=
+000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: =
+normal; overflow-wrap: normal;"><font color=3D"#000000" face=3D"Arial, Helv=
+etica" style=3D"font-size: 12pt;color:#000000;"><font><span>
+
+</span></font></font></p><p style=3D"font-family:Arial,verdana;font-size:12=
+px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left=
+; word-break: normal; overflow-wrap: normal;"><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#000000;"><font><font =
+color=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:=
+#000000;"><span>
+
+</span></font></font></font></p><p style=3D"font-family:Arial,verdana;font-=
+size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-alig=
+n: left; word-break: normal; overflow-wrap: normal;"><font color=3D"#000000=
+" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#000000;"><font>=
+<font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;=
+color:#000000;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"=
+font-size: 12pt;color:#000000;"><span>
+
+</span></font></font></font></font></p><p align=3D"left" style=3D"font-fami=
+ly:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-h=
+eight: 19pt; text-align: left; word-break: normal; overflow-wrap: normal;">=
+</p><div align=3D"left" style=3D"text-align: left;"><span style=3D"font-siz=
+e: 11pt; font-family: Arial, Helvetica; background-color: rgba(0, 0, 0, 0);=
+">=E2=9A=A0=EF=B8=8FR&Aacute;PIDO: S&iacute;gueme en Instagram y env&iacute=
+;ame la palabra &quot;EMPRENDE&quot; para&nbsp;</span><span style=3D"backgr=
+ound-color: rgba(0, 0, 0, 0); font-size: 11pt; font-family: Arial, Helvetic=
+a;">recibir un regalo gratis.</span></div><p style=3D"margin: 0;padding: 0p=
+x;font-family:Arial, Helvetica, sans-serif; color:#000000;line-height:1.7;f=
+ont-family:Arial,verdana;font-size:12px;padding:0px;"></p><font><font color=
+=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#0000=
+00;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"font-size: =
+12pt;color:#000000;">
+
+</font></font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;=
+font-size:12px; color:#000000;padding:0px;margin: 0;word-break: normal; ove=
+rflow-wrap: normal;"></p><font color=3D"#000000" face=3D"Arial, Helvetica" =
+style=3D"font-size: 12pt;color:#000000;"><font><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"font-size: 12pt;color:#000000;">
+
+</font></font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;=
+font-size:12px; color:#000000;padding:0px;margin: 0;word-break: normal; ove=
+rflow-wrap: normal;"></p><font color=3D"#000000" face=3D"Arial, Helvetica" =
+style=3D"font-size: 12pt;color:#000000;"><font>
+
+</font></font><p style=3D"line-height:1.7;font-family:Arial,verdana;font-si=
+ze:12px; color:#000000;padding:0px;margin: 0;word-break: normal; overflow-w=
+rap: normal;"></p>
+
+<p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px; color=
+:#000000;padding:0px;margin: 0;word-break: normal; overflow-wrap: normal;">=
+</p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+=09=09                    </div>=20
+=09=09    </td></tr></tbody></table>
+=09=09    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+=09=09 <!--[if (gte mso 9)|(IE)]>
+                </tr></tbody></table>
+            <![endif]-->
+=09=09</td>
+=09    </tr>
+=09    </tbody></table>
+            </div></div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1772467760358" style=3D" mso-table-lspa=
+ce:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-=
+rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-collapse:collap=
+se;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467760358" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+=09    =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:=
+12px;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;pa=
+dding-right:15px;padding-left:15px;">
+             =09    =09=09<div style><span><font style><font style=3D"font-=
+size: 13pt;">
+
+</font><p style=3D"line-height:1.7;font-family:Arial,verdana; color:#000000=
+;padding:0px;margin: 0;font-size: 13pt; line-height: 19pt; text-align: left=
+;"><font color=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0,=
+ 0, 0); font-size: 13pt;"></font></p><span><font style=3D"font-size: 13pt;"=
+>
+
+<b style><p style=3D"font-family:Arial,verdana;font-size:12px; color:#00000=
+0;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font color=
+=3D"#000000" face=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);">PD:<b=
+r>Rechazar las ventas no te hace m&aacute;s espiritual.</font></p><p style=
+=3D"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;mar=
+gin: 0;line-height: 19pt; text-align: left;"><font color=3D"#000000" face=
+=3D"Arial, Helvetica" style=3D"color: rgb(0, 0, 0);">Te hace menos influyen=
+te =E2=9A=A0=EF=B8=8F</font></p></b></font>
+
+</span><span style=3D"font-size: 13pt;"></span></font>
+
+</span></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1772467751248" style=3D" mso-table-lspa=
+ce:0pt; font-size:12px;font-family:Arial, Helvetica, sans-serif; mso-table-=
+rspace:0pt;font-size:12px;border:0px;padding:0px 0px;border-collapse:collap=
+se;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1772467751248" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:#ffffff;">
+=09    =09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" class=3D"zpAlignPos" style=3D" mso-table-lspace:0pt; mso-table-r=
+space:0pt;font-size:12px;padding:0px;border:0px;border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;" width=3D"100%">
+=09  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border:0px;padding:7px =
+15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top=
+:0px none ;   border-bottom:0px none ;padding-top:30px;padding-bottom:0px;p=
+adding-right:0px;padding-left:0px;">
+             =09    =09=09<div componentbgcolor=3D"#ffffff" componentpaddin=
+gbottom=3D"0px" componentpaddingleft=3D"0px" componentpaddingright=3D"0px" =
+componentpaddingtop=3D"30px" data-gramm=3D"false" data-lt-tmp-id=3D"lt-1006=
+60" spellcheck=3D"false" style=3D"background-color: rgb(255, 255, 255);"><p=
+ align=3D"center" style=3D"font-family:Arial,verdana;font-size:12px; color:=
+#000000;padding:0px;margin: 0;line-height: 19pt; text-align: center;"><font=
+ style=3D"font-size: 8pt;"><span>
+
+Recibes este correo porque te has registrado a alguna de nuestras clases, e=
+ntrenamientos o eventos de <b>mas university</b>. Si crees que esto es un e=
+rror, puedes gestionar tus preferencias abajo.
+
+</span><br></font></p><p align=3D"center" style=3D"font-family:Arial,verdan=
+a;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; te=
+xt-align: center;"><font color=3D"#333333" face=3D"Arial, Helvetica" style=
+=3D"color: rgb(51, 51, 51);"><font style=3D"font-size: 8pt;">&nbsp;<a alt=
+=3D"Unsubscribe" href=3D"https://uwxv-zgpl.maillist-manage.com/ua/optout?od=
+=3D3z358edffb0a711ff727927de207a6ea8c311f7dafbf86ce66fa71f87f5e56c86c&rd=3D=
+116648445601ade4c&sd=3D1166484456019f95f&n=3D11699e4c2ddd145" rel=3D"noopen=
+er noreferrer" style=3D"text-decoration:underline;color: rgb(51, 51, 51);" =
+target=3D"_blank" title=3D"Unsubscribe" zcurl_name=3D"l_3"><font color=3D"#=
+333333" style=3D"color:#333333;">Unsubscribe</font></a> or <a alt=3D"Update=
+ your preferences" href=3D"https://uwxv-zgpl.maillist-manage.com/click/1166=
+48445601ade4c/1166484456019f5a0" rel=3D"noopener noreferrer" style=3D"text-=
+decoration:underline;color: rgb(51, 51, 51);" target=3D"_blank" title=3D"Up=
+date your preferences" zcurl_name=3D"l_4"><font color=3D"#333333" style=3D"=
+color: rgb(51, 51, 51);">Update your preferences</font></a></font><br></fon=
+t></p></div>
+=09=09=09</td></tr>
+=09=09</tbody></table>
+       =09  </div>
+</td></tr>
+    </tbody></table>
+</div>
+
+=09=09=09=09=09</td>=20
+=09=09=09=09=09</tr>=20
+=09=09=09=09=09</tbody></table>
+=09=09=09=09</td>=20
+=09=09=09=09<td style=3D" mso-table-lspace:0pt; font-size:12px;font-family:=
+Arial, Helvetica, sans-serif; mso-table-rspace:0pt;font-size:12px;border:0p=
+x;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rsp=
+ace:0pt;">&nbsp;</td>
+=09=09=09</tr>=20
+=09=09</tbody></table>=20
+</div>
+</center>=20
+<img style=3D'visibility:hidden' src=3D"https://uwxv-zgpl.maillist-manage.c=
+om/click/116648445601ade4c/open.gif" alt=3D"" height=3D"1" width=3D"1"/><a =
+style=3D'visibility:hidden' href=3D"https://uwxv-zgpl.maillist-manage.com/c=
+lick/116648445601ade4c/1166484456019f564" alt=3D"" height=3D"1" width=3D"1"=
+/></body></html>
+------=_Part_967865_2111518800.1774284318772--

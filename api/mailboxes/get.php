@@ -12,13 +12,23 @@ require_once '../../config/database.php';
 
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
+if ($id <= 0) {
+    echo json_encode(['success' => false, 'message' => 'ID no válido']);
+    exit;
+}
+
 try {
+    // Al usar *, ya incluimos el nuevo campo reply_to_email
     $stmt = $pdo->prepare("SELECT * FROM mailboxes WHERE id = ?");
     $stmt->execute([$id]);
-    $mailbox = $stmt->fetch();
+    $mailbox = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($mailbox) {
-        echo json_encode(['success' => true, 'mailbox' => $mailbox]);
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode([
+            'success' => true, 
+            'mailbox' => $mailbox
+        ], JSON_UNESCAPED_UNICODE);
     } else {
         echo json_encode(['success' => false, 'message' => 'Bandeja no encontrada']);
     }

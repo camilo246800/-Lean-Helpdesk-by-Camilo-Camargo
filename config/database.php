@@ -2,9 +2,9 @@
 // config/database.php
 
 $host = 'localhost'; 
-$db   = 'database';
-$user = 'database user';
-$pass = 'password';
+$db   = 'help_soporte';
+$user = 'help_soporte';
+$pass = 'O5!jxn8qE+qj4#3y';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
