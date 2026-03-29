@@ -1,20 +1,17 @@
 🚀 Lean Helpdesk by Camilo Camargo
 Lean Helpdesk es un sistema de gestión de tickets ligero, autónomo y auto-alojado, diseñado para centralizar múltiples bandejas de entrada de correo electrónico en una interfaz tipo chat moderna y minimalista.
 
-🛠️ Tecnologías utilizadas
+
+<code>🛠️ Tecnologías utilizadas
 Backend: PHP 8.x (Arquitectura basada en APIs REST).
-
 Frontend: HTML5, JavaScript (Vanilla), Tailwind CSS (CDN).
-
 Base de Datos: MySQL / MariaDB.
-
 Gestión de Correo: Webklex/PHP-IMAP (Lectura) y PHPMailer (Envío).
-
-Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
+Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.</code>
 
 📂 Estructura del Proyecto
 
-/
+<code>/
 ├── api/
 │   ├── auth/           # Login, Logout, Perfil y Sesión
 │   ├── mailboxes/      # CRUD de bandejas de entrada
@@ -28,9 +25,10 @@ Seguridad: Sesiones PHP, encriptación de contraseñas con password_hash.
 ├── index.html          # Panel principal (Dashboard)
 ├── login.html          # Interfaz de acceso
 ├── perfil.html         # Interfaz de gestión de usuario
-└── vendor/             # Librerías de Composer
+└── vendor/             # Librerías de Composer</code>
 
-🗄️ Base de Datos (Esquema SQL)
+<code>🗄️ Base de Datos (Esquema SQL)
+
 El sistema utiliza 4 tablas principales:
 
 users: Almacena las credenciales de acceso al panel.
@@ -41,9 +39,10 @@ tickets: Cabeceras de las conversaciones (Asunto, Cliente, Estado).
 
 messages: El cuerpo de los correos (HTML/Texto) vinculados a un ticket.
 
-attachments: Registro de archivos descargados vinculados a mensajes.
+attachments: Registro de archivos descargados vinculados a mensajes.</code>
 
 ⚙️ Configuración de Protocolos
+
 📩 IMAP (Lectura)
 El sistema utiliza el puerto 993 (SSL) por defecto.
 
@@ -64,7 +63,7 @@ Para que el sistema sea autónomo, se debe configurar una tarea programada en el
 Frecuencia recomendada: Cada 5 minutos (*/5 * * * *).
 
 Comando:
-php /home/tu-dominio.com/public_html/cron/fetch_emails.php
+<code>php /home/tu-dominio.com/public_html/cron/fetch_emails.php</code>
 
 🔍 Funciones Especiales
 Buscador Global: Filtra por correo de cliente o asunto en todas las bandejas simultáneamente.
@@ -99,7 +98,7 @@ Autor: Camilo Camargo
 
 Versión: 1.0 (Final Estable)
 
-1. 🗄️ Estructura de Base de Datos (SQL)
+<code>1. 🗄️ Estructura de Base de Datos (SQL)
 Copia y ejecuta este código en tu phpMyAdmin para crear la estructura completa y necesaria:
 
 -- 1. Tabla de Usuarios (Acceso al Panel)
@@ -108,9 +107,9 @@ CREATE TABLE users (
     email VARCHAR(255) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+);</code>
 
--- 2. Tabla de Bandejas (Configuración IMAP/SMTP)
+<code>-- 2. Tabla de Bandejas (Configuración IMAP/SMTP)
 CREATE TABLE mailboxes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -125,9 +124,9 @@ CREATE TABLE mailboxes (
     smtp_user VARCHAR(255) NOT NULL,
     smtp_pass VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+);</code>
 
--- 3. Tabla de Tickets (Cabeceras de conversación)
+<code>-- 3. Tabla de Tickets (Cabeceras de conversación)
 CREATE TABLE tickets (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mailbox_id INT NOT NULL,
@@ -137,9 +136,9 @@ CREATE TABLE tickets (
     status ENUM('OPEN', 'CLOSED') DEFAULT 'OPEN',
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (mailbox_id) REFERENCES mailboxes(id) ON DELETE CASCADE
-);
+);</code>
 
--- 4. Tabla de Mensajes (El contenido del chat)
+<code>-- 4. Tabla de Mensajes (El contenido del chat)
 CREATE TABLE messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     ticket_id INT NOT NULL,
@@ -149,9 +148,9 @@ CREATE TABLE messages (
     is_from_customer TINYINT(1) DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ticket_id) REFERENCES tickets(id) ON DELETE CASCADE
-);
+);</code>
 
--- 5. Tabla de Adjuntos
+<code>-- 5. Tabla de Adjuntos
 CREATE TABLE attachments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     message_id INT NOT NULL,
@@ -160,7 +159,7 @@ CREATE TABLE attachments (
     mime_type VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (message_id) REFERENCES messages(id) ON DELETE CASCADE
-);
+);</code>
 
 2. 📁 Resumen de Archivos Clave (Backend)
 
