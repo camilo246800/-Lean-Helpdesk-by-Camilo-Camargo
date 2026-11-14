@@ -4,7 +4,7 @@ Un helpdesk ligero y auto-alojado que junta varias bandejas de correo en un solo
 
 Lo creé para el equipo de soporte de una empresa de educación que atiende varias marcas desde distintos correos. Corre en cualquier hosting con PHP y MySQL, sin pagar licencias por agente.
 
-Guía completa en español: https://camilocamargo.com/blog/
+Guía completa en español: https://camilocamargo.com/helpdesk-gratis-open-source/
 
 ## Qué hace
 
