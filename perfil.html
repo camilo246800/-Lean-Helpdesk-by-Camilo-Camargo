@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Lean Helpdesk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Verificamos seguridad antes de mostrar la página
+        async function checkAuth() {
+            try {
+                const res = await fetch('/api/auth/check_session.php');
+                const json = await res.json();
+                if (!json.authenticated) window.location.href = '/login';
+            } catch (e) { window.location.href = '/login'; }
+        }
+        checkAuth();
+    </script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center font-sans">
+    
+    <div class="max-w-md w-full bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-[#001128]">Actualizar Acceso</h2>
+            <a href="/" class="text-gray-500 hover:text-[#001128] text-sm font-medium transition flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver
+            </a>
+        </div>
+        
+        <form id="profileForm" class="space-y-5">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Nuevo Correo de Acceso</label>
+                <input type="email" id="prof-email" required placeholder="tu-nuevo-correo@ejemplo.com" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#001128] focus:border-[#001128]">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Nueva Contraseña</label>
+                <input type="password" id="prof-password" placeholder="Déjalo en blanco para no cambiarla" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#001128] focus:border-[#001128]">
+                <p class="text-xs text-gray-400 mt-1">Si solo quieres cambiar el correo, no escribas nada aquí.</p>
+            </div>
+            
+            <div id="prof-msg" class="hidden p-3 rounded text-sm font-medium"></div>
+            
+            <button type="submit" class="w-full bg-[#001128] hover:bg-black text-white py-2.5 rounded-lg font-bold transition shadow-sm mt-4">
+                Guardar Cambios
+            </button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('profileForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const msgBox = document.getElementById('prof-msg');
+            msgBox.classList.add('hidden'); // Ocultar mensaje previo
+            
+            const email = document.getElementById('prof-email').value;
+            const password = document.getElementById('prof-password').value;
+
+            try {
+                const response = await fetch('/api/auth/update_profile.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                
+                const result = await response.json();
+                
+                msgBox.classList.remove('hidden');
+                if(result.success) {
+                    msgBox.innerText = result.message;
+                    msgBox.className = "p-3 rounded text-sm font-medium bg-green-100 text-green-700 block mt-4";
+                    document.getElementById('prof-password').value = ''; // Limpiar campo contraseña por seguridad
+                } else {
+                    msgBox.innerText = result.message || "Error al actualizar";
+                    msgBox.className = "p-3 rounded text-sm font-medium bg-red-100 text-red-700 block mt-4";
+                }
+            } catch (err) {
+                msgBox.classList.remove('hidden');
+                msgBox.innerText = "Error de conexión con el servidor.";
+                msgBox.className = "p-3 rounded text-sm font-medium bg-red-100 text-red-700 block mt-4";
+            }
+        });
+    </script>
+</body>
+</html>

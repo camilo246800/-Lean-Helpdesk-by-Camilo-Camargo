@@ -1,0 +1,9 @@
+{
+    "name": "camilocamargo/lean-helpdesk",
+    "description": "Helpdesk ligero y auto-alojado que convierte varias bandejas de correo en tickets",
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "webklex/php-imap": "^5.3",
+        "ezyang/htmlpurifier": "^4.17"
+    }
+}

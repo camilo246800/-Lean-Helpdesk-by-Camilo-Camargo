@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Si lo que se busca es un directorio o un archivo que ya existe exactamente así, lo mostramos
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Si el archivo existe con extensión .html, lo sirve de forma oculta
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# Si el archivo existe con extensión .php, lo sirve de forma oculta
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]

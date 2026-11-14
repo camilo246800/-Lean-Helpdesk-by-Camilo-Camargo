@@ -1,0 +1,8 @@
+/vendor/
+/config/database.php
+/config/bot.php
+/uploads/*
+!/uploads/.htaccess
+!/uploads/.gitkeep
+composer.phar
+.DS_Store
